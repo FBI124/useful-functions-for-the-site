@@ -1,4 +1,27 @@
-//скрипт для табов 1. расфасовка каждого контента в отдельную вкладку
+	//slick-slider на сайте с анимацией
+
+	$('.carousel__inner').slick({
+		speed: 1300,
+		autoplay: true,
+		autoplaySpeed: 3000,
+		fade: true,
+		speed: 900,
+		cssEase: 'linear',
+		prevArrow: '<button type="button" class="slick-prev"><img src="ссылка на картинку (стрелку)"></button>',
+		nextArrow: '<button type="button" class="slick-next"><img src="ссылка на картинку (стрелку)"></button>',
+		dots: '<button type="button" class="slick-dots"></button>',
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+				  arrows: false,
+				  dots: true
+				}
+			}
+		]
+	});
+
+	//скрипт для табов 1. расфасовка каждого контента в отдельную вкладку
 
 	$('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
 		$(this)
