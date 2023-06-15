@@ -1,4 +1,4 @@
-	$('your class').slick({
+	$('.carousel__inner').slick({
 		speed: 1300,
 		autoplay: true,
 		autoplaySpeed: 3000,
