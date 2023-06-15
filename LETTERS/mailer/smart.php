@@ -13,13 +13,13 @@ $mail->CharSet = 'utf-8';
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmass.co';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'gmass';              //work.email.letters@gmail.com   
+$mail->Username = 'gmass';              //use this 
 $mail->Password = '611042cc-b41e-49e5-8b4f-d951d791aa1c';                          
 $mail->SMTPSecure = 'auto';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 25;                                    // TCP port to connect to
  
-$mail->setFrom('work.email.letters@gmail.com', 'Pulse');   // От кого письмо 
-$mail->addAddress('work.email.letters@gmail.com');     // Add a recipient
+$mail->setFrom('your email', 'name of your website');   // From whom is the letter
+$mail->addAddress('your email');     // Add a recipient
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
@@ -28,7 +28,7 @@ $mail->addAddress('work.email.letters@gmail.com');     // Add a recipient
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);                                  // Set email format to HTML
 
-$mail->Subject = 'Данные';
+$mail->Subject = 'Data';
 $mail->Body    = '
 		User-entered data: <br> 
 	Name: ' . $name . ' <br>
