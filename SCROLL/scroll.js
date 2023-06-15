@@ -2,9 +2,9 @@
 
 	$(window).scroll(function() {
 		if ($(this).scrollTop () > 1500) {
-			$('.pageup').fadeIn();
+			$('your class').fadeIn();
 		} else {
-			$('.pageup').fadeOut();
+			$('your class').fadeOut();
 		}
 	});
 
