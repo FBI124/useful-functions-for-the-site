@@ -28,9 +28,14 @@
 
 //script for the name of the product (heart rate monitor that was clicked on) display in the modal window
 
-$('.catalog-item__btn').each(function(i) {
+	$('.catalog-item__btn').each(function(i) {
 		$(this).on('click', function() {
 			$('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
 			$('.overlay, #order').fadeIn();
 		})
+	});
+  //red cross to close the form
+
+	$('.modal__close').on('click', function() {
+		$('.overlay, #consultation, #application, #order').fadeOut();
 	});
