@@ -1,3 +1,9 @@
+//modal windows
+
+	$('[data-modal=your class]').on('click', function() {
+		$('.overlay (dimming, if necessary), #your class').fadeIn();
+	});
+
 //customization of the form
 
 	function valideForms(your class) {
