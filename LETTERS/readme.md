@@ -1,1 +1,1 @@
-
+https://www.gmass.co/smtp-test?Username=gmass&Password=611042cc-b41e-49e5-8b4f-d951d791aa1c&Server=smtp.gmass.co&Port=25&from=work.email.letters@gmail.com&to=ajay@wordzen.com ---> To make sending emails to your email work
